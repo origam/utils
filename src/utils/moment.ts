@@ -17,6 +17,14 @@ You should have received a copy of the GNU General Public License
 along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 */
 
-export { csToMomentFormat } from './utils/dateConversion';
-export { toOrigamServerString } from './utils/moment';
+import { Moment } from "moment";
 
+export function toOrigamServerString(date: Moment) {
+  if (!date) {
+    return date;
+  }
+  if (!date.isValid()) {
+    throw new Error("Cannot convert an invalid date to server format")
+  }
+  return date.toISOString(true).split(".")[0]
+}

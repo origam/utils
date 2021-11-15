@@ -1,11 +1,7 @@
 {
   "name": "@origam/utils",
   "main": "dist/index.js",
-  "version": "0.0.4",
-  "repository": "git://github.com/origam/utils.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  "version": "0.0.1",
   "files": [
     "dist"
   ],

@@ -19,4 +19,6 @@ along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 
 export { csToMomentFormat } from './utils/dateConversion';
 export { toOrigamServerString } from './utils/moment';
+export { EventHandler } from './utils/EventHandler';
+export { ArrayPrototypes } from './utils/arrays';
 

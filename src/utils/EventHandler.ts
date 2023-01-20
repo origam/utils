@@ -12,6 +12,15 @@ export class EventHandler {
     this.callBacks.remove(callBack);
   }
 
+  set(callBack: () => void){
+    this.clear();
+    this.add(callBack);
+  }
+
+  clear(){
+    this.callBacks.length = 0;
+  }
+
   call(){
     for (const callBack of this.callBacks) {
       callBack();

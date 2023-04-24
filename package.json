@@ -10,7 +10,7 @@
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "postcss": "^8.4.23",
-    "rollup": "^3.20.7",
+    "rollup": "^3.21.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sass": "^1.12.19",
     "rollup-plugin-typescript2": "^0.34.1",

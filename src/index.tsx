@@ -21,4 +21,6 @@ export { csToMomentFormat } from './utils/dateConversion';
 export { toOrigamServerString } from './utils/moment';
 export { EventHandler } from './utils/EventHandler';
 export { ArrayPrototypes } from './utils/arrays';
+export { flashColor2htmlColor } from './utils/flashColorFormat';
+export { htmlColor2FlashColor } from './utils/flashColorFormat';
 

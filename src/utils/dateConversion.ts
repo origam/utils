@@ -25,8 +25,13 @@ export function csToMomentFormat(csDateFormat: string | undefined) {
     return null;
   }
   return csDateFormat                       // Meaning of the replaced character in c#:
-    .replace(/(?<!d)d(?!d)/g, "D") // The day of the month, from 1 through 31., do not replace "ddd" and "dddd" those are valid day of week symbols
-    .replace(/(?<!d)dd(?!d)/g, "DD")
+    // The day of the month, from 1 through 31., do not replace "ddd" and "dddd" those are valid day of week symbols
+    // Implemented by a replacement fn. due to Safari lack of negative lookbehind support.
+    .replace(/d+/g, (capturedString) => 
+      capturedString.length <= 2 
+        ? capturedString.replace(/d/g,'D') 
+        : capturedString
+      ) 
     .replace(/f/g, "S") // The tenths of a second in a date and time value.
     .replace(/F/g, "S") // If non-zero, the tenths of a second in a date and time value.
     .replace(/K/g, "Z") // time zone

@@ -9,7 +9,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
-    "postcss": "^8.4.29",
+    "postcss": "^8.4.30",
     "rollup": "^3.28.1",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sass": "^1.12.20",

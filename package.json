@@ -21,6 +21,6 @@
     "start": "rollup -c -w"
   },
   "dependencies": {
-    "moment": "^2.29.4"
+    "moment": "^2.30.0"
   }
 }
